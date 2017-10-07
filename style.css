@@ -1,0 +1,44 @@
+/*
+Theme Name: All About Me Creations
+Theme URI: allaboutmecreations.com
+Author: the WordPress team
+Author URI: http://noegarciawebdev.com
+Description: A Wordpress theme for All ABout Me Creations
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
+Text Domain: all about me
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+.skill-bg {
+  background-color: #CCC;
+  width: 100%; }
+
+.skill {
+  text-align: right;
+  padding-right: 20px;
+  line-height: 40px;
+  color: white; }
+
+.html, .css {
+  background-color: #1a1f24;
+  width: 90%; }
+
+.javascript {
+  background-color: #1a1f24;
+  width: 45%; }
+
+.wordpress {
+  background-color: #1a1f24;
+  width: 65%; }
+
+.photoshop {
+  background-color: #1a1f24;
+  width: 70%; }
+
+.customer-service {
+  background-color: #1a1f24;
+  width: 99%; }
