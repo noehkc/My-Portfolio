@@ -42,3 +42,26 @@ Use it to make something cool, have fun, and share what you've learned with othe
 .customer-service {
   background-color: #1a1f24;
   width: 99%; }
+
+.thumbnail img {
+  max-width: 100%; }
+
+/* xs < 768 */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 0.9em; } }
+
+/* sm */
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1em; } }
+
+/* md */
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 1.2em; } }
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.3em; } }

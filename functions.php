@@ -17,4 +17,13 @@ register_nav_menus (array(
   'primary' => 'Primary Menu',
 ));
 
+
+/*add thumbnails*/
+add_theme_support( 'post-thumbnails' );
+
+/*remove dots from exceprt*/
+function new_excerpt_more( $more ) {
+    return '';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
 ?>
