@@ -16,130 +16,143 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
 	<?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
 
 <header>
-    <div class="container header">
-        <div class="row">
-            <div class="col-md-4"><h1>Noe Garcia</h1></div> <!-- Logo -->
-            
-            <div class="col-md-8">
-                <nav class="navbar navbar-expand-lg navbar-light">
-                  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                  </button><!-- Responsive Toggle Button -->
-                  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
-                      <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Portfolio</a>
-                      </li>
-                      <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                      </li>
-                    </ul>
-                  </div>
-                </nav><!-- Bootstrap Menu -->
+    <div class="container-fluid header">
+        <div class="row">            
+            <div class="col-md-12 menu">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <img src="<?php bloginfo('template_url'); ?>/imgs/logo.png" />
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa fa-bars" aria-hidden="true"></i>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item active">
+                    <a class="nav-link scroll" href="#Home">home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#about">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link scroll" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+                
             </div> <!-- End Menu -->
         </div>
     </div>
 </header>  <!-- Logo and Menu -->
 
 <section>    
-    <div class="container no-gutter hero">
-        <h1 class="border-bottom d-flex justify-content-center">Web Developer San Antonio Texas</h1>
-        <h2 class="d-flex justify-content-center">I specialise in front end technologies - HTML5, CSS3, Javascript, Wordpress</h2>
+    <div class="container-fluid hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 d-flex flex-column align-items-center">
+                    <h2 class="d-flex justify-content-center">Web Developer San Antonio Texas</h2>
+                    <h3 class="d-flex justify-content-center">I specialise in front end technologies - HTML5, CSS3, Javascript, Wordpress</h3>               
+                </div>
+            </div>
+        </div>
+        
+
+
     </div> 
 </section> <!-- End Hero Headline Section -->   
 
-<section>
+<section id="about">
     <div class="container">
         <div class="row">
             <div class="col-md-2">
-                <h2>About Me</h2>
+                <h4>About Me</h4>
             </div>
             <div class="col-md-10">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget ultrices lectus, mollis tempor augue. Nam placerat lectus velit, nec blandit nisl scelerisque et. Aenean eget ultrices diam. Morbi sit amet ex dolor. Sed orci est, vehicula eu massa a, aliquam sollicitudin ex. Aliquam tempus tristique odio id lacinia. Donec finibus fermentum felis in imperdiet. Pellentesque tristique dolor felis, ac molestie ex pulvinar a. Morbi est lacus, aliquet id blandit ac, posuere id massa. Cras libero lorem, accumsan quis augue non, commodo volutpat velit. Phasellus ultricies massa ac pulvinar suscipit. Praesent pellentesque tincidunt ultrices. Aliquam pulvinar nulla sit amet erat consequat iaculis. Aenean pharetra non nunc ac tempor. Aliquam erat volutpat. Mauris pellentesque augue nec vulputate laoreet.</p>
+                <p><span>Hi, I'm Noe</span> I'm an apiring front end developer working towards building a career in the web dev industry. During the day (evening) I work as a customer service specilist for a very cool company helping customers solve problems via email, phone and chat. I spend the majority of my free time practicing what I learn and apply towards advancing it into a career. A little about me, I enjoy watching the San Antonio Spurs, Dallas Cowboys, UFC, Game of Thrones, and Silicon Valley just to name a few. My favorite food is chicken alfredo. I can credit my interest in physics to the movie interstellar for blowing my mind. I'm half way decent at chess, I can hold my own in ping pong and am always up for a game of foosball. Currently starting to get back in shape after watching an episode of one punch man. </p>
+                
+                <h4>Background</h4>
+                <p>I taught my self html when I was 12 around 2000, 2001, I thought it was the coolest thing in the world to be able to make my own dragon ball z, wwe, and San Antonio Spurs fan websites. Some of them even got pretty good traffic. In 2010 I had a defining moment in my life - I really set out to do what it took to begin a career as a web designer / developer. I taught myself XHTML and CSS which soon evolved into HTML5 and CSS3. I also learned how to develop Wordpress themes and worked with JavaScript and the jQuery library. It actually didn't take long to find work once I knew the basics. Don't tell my first client this but when I was hired to develop his psd into a wordpress theme, I was in WAY over my head. Luckily, I didn't let it scare me off. I finished his project and he was so stoked about the job I did that he hired me to do the next version of his site design, and referred me to 2 new clients. In 2013 and 2014 I was hired as a sub contractor for a Search Engine Marketing firm where I was responsible for working with the graphic designer to develop her designs into wordpress themes. Regretfully, I lost my way but I never lost my passion for Web Development. So I'm back, starting over from scratch. And since I commited to begining again, I'm even better than I ever was before.  </p>
             </div>
         </div>
     </div>
 </section> <!-- End of About Paragraph -->
     
 <section>
+    <div class="container-fluid skills">
     <div class="container">
         <div class="row">
-            <div class="col-md-12"><h2>Skills That Pay The Bills</h2></div>
+            <div class="col-md-12"><h4>My Skills</h4></div>
         </div>
         <div class="row">
             <div class="col-md-4">
-                <i class="fa fa-html5" aria-hidden="true"></i>HTML5
+                <i class="fa fa-html5" aria-hidden="true"></i> <span>HTML5</span>
                 <div class="skill-bg">
                     <div class="skill html">90%</div> 
                 </div>
             </div><!-- HTML5 -->  
             <div class="col-md-4">
-                            <i class="fa fa-css3" aria-hidden="true"></i> CSS // Favorite Pre-processor - SASS; Favorite Framework - Bootstrap 4
+                            <i class="fa fa-css3" aria-hidden="true"></i> <span>CSS3</span>
                 <div class="skill-bg">
                     <div class="skill css">90%</div> 
                 </div>
             </div><!-- CSS3 -->         
             <div class="col-md-4">
-                            <i class="fa fa-javascript" aria-hidden="true"></i> Javascript // jQuery, react.js
+                            <i class="fa fa-javascript" aria-hidden="true"></i> <span>Javascript</span>
                 <div class="skill-bg">
                     <div class="skill javascript">45%</div> 
                 </div><!-- Javascript -->  
             </div>     
             <div class="col-md-4">
-                <i class="fa fa-html5" aria-hidden="true"></i>Wordpress // 
+                <i class="fa fa-html5" aria-hidden="true"></i> <span>Wordpress</span> 
                 <div class="skill-bg">
                     <div class="skill wordpress">65%</div> 
                 </div>
             </div><!-- Wordpress -->  
             <div class="col-md-4">
-                            <i class="fa fa-css3" aria-hidden="true"></i> Photoshop
+                            <i class="fa fa-css3" aria-hidden="true"></i> <span>Photoshop</span>
                 <div class="skill-bg">
                     <div class="skill photoshop">70%</div> 
                 </div>
             </div>  <!-- Photoshop -->            
             <div class="col-md-4">
-                            <i class="fa fa-javascript" aria-hidden="true"></i> Customer Service
+                            <i class="fa fa-javascript" aria-hidden="true"></i> <span>Customer service</span>
                 <div class="skill-bg">
                     <div class="skill customer-service">99%</div> 
                 </div>
             </div><!-- Customer Service -->          
-            <p class="">If I was a game character in a sports game my skills attribute would be <strong>76.5</strong></p>
         </div>
+    </div>
     </div>
 </section><!-- End of Skills Attribute Section -->
     
-<section>
+<section id="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
-                <h2>View My Recent Work</h2>
+                <h4>Recent Work</h4>
             </div>
             <div class="col-md-9">
                 <div class="row">
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/750x450" />
+                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/750x450" />
+                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/750x450" />
+                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/750x450" />
+                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
                     </div>                    
                 </div>
         </div>
@@ -150,8 +163,8 @@
 <section>
     <div class="container">
         <div class="row">
-            <div class="col-md-12">
-                <h1 class="d-flex justify-content-center">From The Blog</h1>
+            <div class="col-md-12 posts">
+                <div class="d-flex justify-content-center pb-5"><h4>From The Blog</h4></div>
                 <div class="row">
                     <?php $the_query = new WP_Query( 'posts_per_page=3' ); ?>
                     <?php while ($the_query -> have_posts()) : $the_query -> the_post(); ?>
@@ -175,26 +188,30 @@
         </div>
 </section><!-- End of Recent Blog Posts -->
     
-<section>
-    <div class="container-fluid">
+<section id="contact">
+    <div class="container-fluid contact">
     <div class="container">
         <div class="row">
-            <div class="col-md-5">
-                <h2>Noe Garcia</h2>
+            <div class="col-md-5 mb-5">
+                <h2 class="mt-5">Noe Garcia</h2>
                 <h3>San Antonio Web Developer</h3>
                     <p>Feel free to get in touch</p>
-                <ul>
-                    <li><i class="fa fa-facebook-square" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-git-square" aria-hidden="true"></i></li>
-                    <li><i class="fa fa-youtube-square" aria-hidden="true"></i></li>
-                </ul>
+                
+                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <i class="fa fa-git-square" aria-hidden="true"></i>
+                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
             </div>
             
             <div class="col-md-7">
                 <?php echo do_shortcode( '[contact-form-7 id="79" title="Main Contact"]' ); ?>
             </div>
-        </div>    
+        </div>   
+        <div class="row">
+            <div class="col-md-12">
+                <p class="copyright m5 d-flex justify-content-center">&#169; Copyright 2017 Noe Garcia Web Development All Rights Reserved</p>
+            </div>
+        </div>
     </div>
     </div>    
 </section>    
@@ -204,6 +221,10 @@
     
     
     <?php wp_footer(); ?>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
 <script src="https://use.fontawesome.com/2711753928.js"></script>
 </body>
 </html>

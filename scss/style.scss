@@ -14,9 +14,172 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-$main-blue: #1a1f24;
+//colors 
+
+$main-blue: #202831;
+$secondary-blue: #88a0ba;
+$main-font: 'Montserrat', sans-serif;
+$light-grey: #ddd;
+$headline-grey: #8A9097;
+$background-grey: #F4F6F9;
 
 
+body, h1, h2, h3, h4, h5{
+    font-family:$main-font !important;
+    font-weight:400 !important;
+}
+
+h4{
+    font-size:15px;
+    text-transform: uppercase;
+    color: $headline-grey;
+}
+
+h4:after {
+    display: block;
+    width: 30px;
+    height: 2px;
+    margin-top: 15px;
+    content: '';
+    background-color: $secondary-blue;
+}
+
+p {
+    font-size: 14px;
+    line-height: 27px;
+    padding-bottom: 15px;
+    color: #414A52;
+    font-family:$main-font !important;
+    font-weight:400 !important;
+}
+
+ul li{
+    list-style-type:none;
+    font-size:14px;
+    margin:0;
+    padding:0;
+}
+
+/*header styles*/
+.logo{
+    background:$main-blue;
+    color:white;
+    height:100px;
+    border-bottom:7px solid $secondary-blue;
+    padding-right:25px;
+    display:inline-block;
+}
+
+.logo h1{
+    font-size:18px;
+    font-weight:200;
+    text-transform: uppercase;
+    letter-spacing:2px;
+}
+
+.menu{
+    background-color:$background-grey;
+}
+
+.navbar-toggler{
+    background-color:$main-blue !important;
+    border:0 !important;
+    border-radius:0 !important;
+    color:white !important;
+    cursor:pointer;
+    margin:0 !important;
+    padding:10px 0;
+}
+
+.navbar-toggler-icon{
+    color:white !important;
+    background-color:white !important;
+}
+.navbar-collapse ul li{
+    position:relative;
+    padding:0 15px;
+    border-right:1px solid $light-grey;
+    text-transform: uppercase;
+    font-weight:500;
+    font-size:13px;
+    margin-top:25px;
+    letter-spacing:1px;
+}
+
+.navbar-collapse ul li:last-child{
+    border:0;
+}
+
+.navbar-collapse ul li a{
+    position: relative;
+    color:$main-blue !important;
+}
+
+
+.navbar-collapse ul li a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $secondary-blue;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-collapse ul li a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*Hero Styles*/
+
+.hero{
+	background: url(imgs/background.jpg) no-repeat top center fixed; 
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+    height:700px;
+    color:white;
+    margin-bottom:140px;
+    height: calc(100vh - 8.2em);
+    max-height: 760px;
+    padding:20px;
+}
+
+.hero h2{
+    border-bottom:1px solid white;
+    padding-bottom:25px;
+    font-size:36px;
+}
+
+.hero h3{
+    padding-top:25px;
+}
+
+/*Begin Skills Section*/
+
+.skills{
+    background-color:$background-grey;
+    padding:140px 0;
+    margin:140px 0;
+}
+
+.skills span{
+    text-transform:uppercase;
+    letter-spacing:1px;
+    font-weight:400;
+    font-size:12px;
+    padding-top:25px;
+    letter-spacing:2px;
+    display:inline-block;
+}
 
 .skill-bg{
   background-color:#CCC;
@@ -24,10 +187,12 @@ $main-blue: #1a1f24;
 }
 
 .skill{
-  text-align:right;
-  padding-right:20px;
-  line-height:40px;
-  color:white;
+    text-align:right;
+    padding-right:20px;
+    line-height:20px;
+    color:white;
+    font-size:11px;
+    letter-spacing:1px;
 }
 
 .html, .css{
@@ -55,9 +220,111 @@ $main-blue: #1a1f24;
     width:99%;
 }
 
+/*Post styles*/
+.posts{
+    margin:140px 0;
+}
+
+.posts h2{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 15px 10px 0 0;
+    margin:0;
+}
+
+.posts h2 a:link, a:visited{
+    color: #414A52;   
+}
+
+.posts h2 a:hover{
+    text-decoration:none;
+}
+
+.thumbnail{
+    margin-bottom:15px;
+}
+
 .thumbnail img{
     max-width:100%;
 }
+
+.posts p{
+    text-align: justify;
+    text-justify: inter-word;
+    margin-bottom:0;
+    padding-bottom:10px;
+}
+
+.meta{
+    font-size:11px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    border-top:1px solid $light-grey;
+    padding-top:10px;
+    margin-bottom:20px;
+}
+
+.meta a:link, .meta a:visited{
+    color:$secondary-blue;
+}
+
+.meta a:hover{
+    text-decoration:none;
+}
+
+/*Contact Section*/
+.contact{
+    background-color:$main-blue;
+    margin:140px 0 0 0;
+    padding:140px 0;
+    color:white;
+}
+
+.contact h2, .contact h3{
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.contact h2{
+    font-size:18px;
+}
+
+.contact h3{
+    font-size:16px;
+}
+
+.contact i{
+    padding-right:5px;
+    font-size:30px;
+    color:$headline-grey;
+}
+
+
+.contact label{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+}
+
+.contact input{
+    border:1px solid $light-grey;
+    border-radius: none;
+}
+
+input.wpcf7-submit{
+    background-color:$secondary-blue !important;
+    border:0;
+    font-size:13px;
+}
+
+.copyright{
+    margin-top:140px;
+    border-top:1px solid $headline-grey;
+    padding-top:25px;
+}
+
+/*Media Queries*/
+
 
 /* xs < 768 */
 @media screen and (max-width: 767px) {
@@ -71,6 +338,7 @@ $main-blue: #1a1f24;
     body {
         font-size: 1em;
     }
+    
 }
 
 /* md */
@@ -78,11 +346,15 @@ $main-blue: #1a1f24;
     body {
         font-size: 1.2em;
     }
+    
 }
 
 /* lg */
 @media screen and (min-width: 1200px) {
     body {
         font-size: 1.3em;
+    }
+        .navbar-collapse ul li{
+        border:0;
     }
 }
