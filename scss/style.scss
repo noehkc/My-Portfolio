@@ -88,7 +88,7 @@ ul li{
     color:white !important;
     cursor:pointer;
     margin:0 !important;
-    padding:10px 0;
+    padding:10px 15px !important;
 }
 
 .navbar-toggler-icon{
@@ -140,12 +140,12 @@ ul li{
 /*Hero Styles*/
 
 .hero{
-	background: url(imgs/background.jpg) no-repeat top center fixed; 
+    width: 100%;   
+	background: url(imgs/san-antonio-347431_1920.jpg) no-repeat top center fixed; 
     -webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover; 
-    height:700px;
     color:white;
     margin-bottom:140px;
     height: calc(100vh - 8.2em);
@@ -157,10 +157,12 @@ ul li{
     border-bottom:1px solid white;
     padding-bottom:25px;
     font-size:36px;
+    text-align:center;
 }
 
 .hero h3{
     padding-top:25px;
+    text-align:center;
 }
 
 /*Begin Skills Section*/
@@ -323,6 +325,14 @@ input.wpcf7-submit{
     padding-top:25px;
 }
 
+
+.single-posts-img{
+    margin:25px 0;
+}
+
+.postmetadata a:link, a:visited{
+    color:$secondary-blue;
+}
 /*Media Queries*/
 
 

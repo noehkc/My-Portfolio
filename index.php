@@ -1,66 +1,18 @@
-<?php
+<?php 
 /**
- * The header for our theme
+ * The main template file
+ * It puts together the home page if no home.php file exists.
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package NGFolio
+ * @package NG Folio
  */
-
-?>
-<!doctype html>
-<html <?php language_attributes(); ?>>
-<head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="http://gmpg.org/xfn/11">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500" rel="stylesheet">
-	<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-
-<header>
-    <div class="container-fluid header">
-        <div class="row">            
-            <div class="col-md-12 menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <img src="<?php bloginfo('template_url'); ?>/imgs/logo.png" />
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link scroll" href="#Home">home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scroll" href="#about">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scroll" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scroll" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-                
-            </div> <!-- End Menu -->
-        </div>
-    </div>
-</header>  <!-- Logo and Menu -->
-
+ get_header(); ?>
 <section>    
     <div class="container-fluid hero d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-12 d-flex flex-column align-items-center">
-                    <h2 class="d-flex justify-content-center">Web Developer San Antonio Texas</h2>
-                    <h3 class="d-flex justify-content-center">I specialise in front end technologies - HTML5, CSS3, Javascript, Wordpress</h3>               
+                    <h2 class="d-flex justify-content-xl-center">Web Developer San Antonio Texas</h2>
+                    <h3 class="d-flex justify-content-xl-center">I specialise in front end technologies - HTML5, CSS3, Javascript, Wordpress</h3>               
                 </div>
             </div>
         </div>
@@ -141,18 +93,18 @@
                 <h4>Recent Work</h4>
             </div>
             <div class="col-md-9">
-                <div class="row">
+                <div class="row no-gutters">
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
+                        <img class="img-fluid" src="http://via.placeholder.com/600x400" />
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
+                        <img class="img-fluid" src="http://via.placeholder.com/600x400" />
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
+                        <img class="img-fluid" src="http://via.placeholder.com/600x400" />
                     </div>
                     <div class="col-md-6">
-                        <img class="img-responsive" src="http://via.placeholder.com/600x400" />
+                        <img class="img-fluid" src="http://via.placeholder.com/600x400" />
                     </div>                    
                 </div>
         </div>
@@ -187,44 +139,4 @@
             </div>
         </div>
 </section><!-- End of Recent Blog Posts -->
-    
-<section id="contact">
-    <div class="container-fluid contact">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 mb-5">
-                <h2 class="mt-5">Noe Garcia</h2>
-                <h3>San Antonio Web Developer</h3>
-                    <p>Feel free to get in touch</p>
-                
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                    <i class="fa fa-git-square" aria-hidden="true"></i>
-                    <i class="fa fa-youtube-square" aria-hidden="true"></i>
-            </div>
-            
-            <div class="col-md-7">
-                <?php echo do_shortcode( '[contact-form-7 id="79" title="Main Contact"]' ); ?>
-            </div>
-        </div>   
-        <div class="row">
-            <div class="col-md-12">
-                <p class="copyright m5 d-flex justify-content-center">&#169; Copyright 2017 Noe Garcia Web Development All Rights Reserved</p>
-            </div>
-        </div>
-    </div>
-    </div>    
-</section>    
-    
-    
-    
-    
-    
-    <?php wp_footer(); ?>
-<script
-  src="https://code.jquery.com/jquery-3.2.1.min.js"
-  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-  crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/2711753928.js"></script>
-</body>
-</html>
+   <?php get_footer(); ?> 
