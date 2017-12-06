@@ -1,295 +1,174 @@
 /*
-Theme Name: All About Me Creations
-Theme URI: allaboutmecreations.com
+Theme Name: Baghira
+Theme URI: baghira.io
 Author: the WordPress team
-Author URI: http://noegarciawebdev.com
+Author URI: http://noegarcia.me
 Description: A Wordpress theme for All ABout Me Creations
 Version: 1.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: black, brown, orange, tan, white, yellow, light, one-column, two-columns, right-sidebar, flexible-width, custom-header, custom-menu, editor-style, featured-images, microformats, post-formats, rtl-language-support, sticky-post, translation-ready
-Text Domain: all about me
+Text Domain: baghira
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-body, h1, h2, h3, h4, h5 {
-  font-family: "Montserrat", sans-serif !important;
-  font-weight: 400 !important; }
 
-h4 {
-  font-size: 15px;
-  text-transform: uppercase;
-  color: #8A9097; }
+/*import main font*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
 
-h4:after {
-  display: block;
-  width: 30px;
-  height: 2px;
-  margin-top: 15px;
-  content: '';
-  background-color: #88a0ba; }
 
-p {
-  font-size: 14px;
-  line-height: 27px;
-  padding-bottom: 15px;
-  color: #414A52;
-  font-family: "Montserrat", sans-serif !important;
-  font-weight: 400 !important; }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 
-ul li {
-  list-style-type: none;
-  font-size: 14px;
-  margin: 0;
-  padding: 0; }
+a {
+    color:#1d868f;
+    text-decoration:none;
+}
 
-/*header styles*/
-.logo {
-  background: #202831;
-  color: white;
-  height: 100px;
-  border-bottom: 7px solid #88a0ba;
-  padding-right: 25px;
-  display: inline-block; }
+a:hover{
+    color:#639da2;
+    text-decoration:none;
+}
 
-.logo h1 {
-  font-size: 18px;
-  font-weight: 200;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
 
-.menu {
-  background-color: #F4F6F9; }
 
-.navbar-toggler {
-  background-color: #202831 !important;
-  border: 0 !important;
-  border-radius: 0 !important;
-  color: white !important;
-  cursor: pointer;
-  margin: 0 !important;
-  padding: 10px 15px !important; }
+/*  :::NAVBAR VERSION 1 STYLES:::  
 
-.navbar-toggler-icon {
-  color: white !important;
-  background-color: white !important; }
+nav.navbar{
+    margin:0;
+    padding:15px 0;
+}
 
-.navbar-collapse ul li {
-  position: relative;
-  padding: 0 15px;
-  border-right: 1px solid #ddd;
-  text-transform: uppercase;
-  font-weight: 500;
-  font-size: 13px;
-  margin-top: 25px;
-  letter-spacing: 1px; }
+.navbar-toggler{
+    border:0;
+}
+.toggle-button{
+    border:0;
+    color:#fff;
+}
 
-.navbar-collapse ul li:last-child {
-  border: 0; }
+ul.nav li, ul.navbar-nav li{
+    padding:15px 30px 0 0;
+    font-weight:900;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    font-size:16px;
+}
 
-.navbar-collapse ul li a {
-  position: relative;
-  color: #202831 !important; }
+ul.navbar-nav li:last-child{
+    padding-right:0;
+}
 
-.navbar-collapse ul li a:before {
-  content: "";
-  position: absolute;
+ul.nav li a:link, ul.nav li a:visited{
+    color:#e5e5e5;
+}
+
+ul.nav li a:hover{
+    color:#1d868f;
+    text-decoration: none;
+}
+
+.dropdown-menu {
+    border:0;
+    background: none;
+}
+.navbar .dropdown-menu li {
   width: 100%;
-  height: 2px;
-  bottom: 0;
-  left: 0;
-  background-color: #88a0ba;
-  visibility: hidden;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s; }
+  margin-left: 20px !important;
+} */
 
-.navbar-collapse ul li a:hover:before {
-  visibility: visible;
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1); }
+/*  :::NAVBAR/HEADER VERSION 2 STYLES:::  */
 
-/*Hero Styles*/
-.hero {
-  width: 100%;
-  background: url(imgs/san-antonio-347431_1920.jpg) no-repeat top center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  color: white;
-  margin-bottom: 140px;
-  height: calc(100vh - 8.2em);
-  max-height: 760px;
-  padding: 20px; }
+.header{
+    padding:50px 0px;
+    background-color:#363d42;
+}
+.social-buttons ul{
+    list-style-type:none;
+    padding-top:25px;
+}
 
-.hero h2 {
-  border-bottom: 1px solid white;
-  padding-bottom: 25px;
-  font-size: 36px;
-  text-align: center; }
+.social-buttons li{
+    float:left;
+    margin-right:15px;
+    padding-top:15px;
+    display:block;
+    height:50px;
+    width:50px;
+    text-align:center;
+}
 
-.hero h3 {
-  padding-top: 25px;
-  text-align: center; }
+.social-buttons li:last-child{
+    margin-right:0;
+}
 
-/*Begin Skills Section*/
-.skills {
-  background-color: #F4F6F9;
-  padding: 140px 0;
-  margin: 140px 0; }
+.social-icon {
+    display:block;
+    color:#525659;
+    border:1px solid #525659;
+    padding:10px;
+    font-size:24px;  
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;    
+}
 
-.skills span {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  font-size: 12px;
-  padding-top: 25px;
-  letter-spacing: 2px;
-  display: inline-block; }
 
-.skill-bg {
-  background-color: #CCC;
-  width: 100%; }
+.social-icon:hover {
+    display:block;
+    color:#1d868f;
+    font-size:24px;
+    border:1px solid #1d868f;
+}
 
-.skill {
-  text-align: right;
-  padding-right: 20px;
-  line-height: 20px;
-  color: white;
-  font-size: 11px;
-  letter-spacing: 1px; }
+nav.navbar{
+    padding:0;
+    margin:0;
+}
 
-.html, .css {
-  background-color: #202831;
-  width: 90%; }
+ul.nav li a:link, ul.nav li a:visited{
+    color:white;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+}
 
-.javascript {
-  background-color: #202831;
-  width: 45%; }
+ul.nav li a:hover{
+    color:#1d868f;
+}
 
-.wordpress {
-  background-color: #202831;
-  width: 65%; }
+ul.nav li, ul.navbar-nav li{
+    padding:15px 30px 0 0;
+    font-size:13px;
+    font-weight:500;
+    text-transform: uppercase;
+    letter-spacing:1px;
+}
 
-.photoshop {
-  background-color: #202831;
-  width: 70%; }
+ul.navbar-nav li:last-child{
+    padding-right:0;
+}
 
-.customer-service {
-  background-color: #202831;
-  width: 99%; }
 
-/*Post styles*/
-.posts {
-  margin: 140px 0; }
 
-.posts h2 {
-  font-size: 20px;
-  font-weight: 500;
-  padding: 15px 10px 0 0;
-  margin: 0; }
+.toggle-button{
+    font-size:24px;
+    color:white;
+}
 
-.posts h2 a:link, a:visited {
-  color: #414A52; }
+.dropdown-menu {
+    background:#363d42;
+    border:0;
+    padding:10px;
+    position:relative;
+}
 
-.posts h2 a:hover {
-  text-decoration: none; }
 
-.thumbnail {
-  margin-bottom: 15px; }
+@media (max-width: 992px)  { 
 
-.thumbnail img {
-  max-width: 100%; }
+ul.nav li, ul.navbar-nav li {
+    padding: 15px 0 0 0 !important;
+    text-align: center !important;
+}
 
-.posts p {
-  text-align: justify;
-  text-justify: inter-word;
-  margin-bottom: 0;
-  padding-bottom: 10px; }
-
-.meta {
-  font-size: 11px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  border-top: 1px solid #ddd;
-  padding-top: 10px;
-  margin-bottom: 20px; }
-
-.meta a:link, .meta a:visited {
-  color: #88a0ba; }
-
-.meta a:hover {
-  text-decoration: none; }
-
-/*Contact Section*/
-.contact {
-  background-color: #202831;
-  margin: 140px 0 0 0;
-  padding: 140px 0;
-  color: white; }
-
-.contact h2, .contact h3 {
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.contact h2 {
-  font-size: 18px; }
-
-.contact h3 {
-  font-size: 16px; }
-
-.contact i {
-  padding-right: 5px;
-  font-size: 30px;
-  color: #8A9097; }
-
-.contact label {
-  font-size: 13px;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.contact input {
-  border: 1px solid #ddd;
-  border-radius: none; }
-
-input.wpcf7-submit {
-  background-color: #88a0ba !important;
-  border: 0;
-  font-size: 13px; }
-
-.copyright {
-  margin-top: 140px;
-  border-top: 1px solid #8A9097;
-  padding-top: 25px; }
-
-.single-posts-img {
-  margin: 25px 0; }
-
-.postmetadata a:link, a:visited {
-  color: #88a0ba; }
-
-/*Media Queries*/
-/* xs < 768 */
-@media screen and (max-width: 767px) {
-  body {
-    font-size: 0.9em; } }
-
-/* sm */
-@media screen and (min-width: 768px) {
-  body {
-    font-size: 1em; } }
-
-/* md */
-@media screen and (min-width: 992px) {
-  body {
-    font-size: 1.2em; } }
-
-/* lg */
-@media screen and (min-width: 1200px) {
-  body {
-    font-size: 1.3em; }
-  .navbar-collapse ul li {
-    border: 0; } }
+}

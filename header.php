@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package NGFolio
+ * @package Baghira
  */
 
 ?>
@@ -21,36 +21,72 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 <header>
-    <div class="container-fluid header">
-        <div class="row">            
-            <div class="col-md-12 menu">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <img src="<?php bloginfo('template_url'); ?>/imgs/logo.png" />
-              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-              </button>
-              <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item active">
-                    <a class="nav-link scroll" href="#Home">home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scroll" href="#about">About Me</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scroll" href="#portfolio">Portfolio</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link scroll" href="#contact">Contact</a>
-                  </li>
-                </ul>
-              </div>
-            </nav>
-                
-            </div> <!-- End Menu -->
-        </div>
-    </div>
-</header>  <!-- Logo and Menu -->
 
+<div class="container-fluid header">
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <?php if ( has_custom_logo() ){
+                        the_custom_logo();
+                    }else { ?> 
+                        <h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+                    <?php } ?>            
+            </div>
+            
+            <div class="col-8 social-buttons d-flex justify-content-end">
+                <ul>
+                    <li><a href="#"><i class="social-icon fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="social-icon fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="social-icon fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="#"><i class="social-icon fa fa-youtube" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
+        </div> 
+
+           <nav class="navbar navbar-expand-lg">
+              <div class="container">
+                    <button class="navbar-toggler mt-5 mx-auto" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars toggle-button" aria-hidden="true"></i>
+                    </button>                                   
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <?php bootstrap_nav(); ?>  <! -- Bootstrap Walker Nav -- >
+                </div>
+              </div>
+            </nav>        
+
+    </div> 
+</div>
+    
+
+
+</header>  <!-- Logo and Menu -->
+<!--Nav Version 1
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <div class="navbar-brand">
+            <?php if ( has_custom_logo() ){
+                    the_custom_logo();
+                }else { ?> 
+                    <h2><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h2>
+                <?php } ?>
+            
+            
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa fa-bars toggle-button" aria-hidden="true"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <?php bootstrap_nav(); ?>  <! -- Bootstrap Walker Nav -- >
+        </div>
+      </div>
+    </nav>
+-->
+    <div class="container">
+    
+    <div class="row">
+    
+    <div class="col-md-12"><h1>Hello World</h1></div>
+    </div>    
+    
+    </div>
