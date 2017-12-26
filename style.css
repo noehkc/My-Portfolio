@@ -107,7 +107,6 @@ ul.nav li a:hover{
 .social-icon {
     display:block;
     color:#525659;
-    border:1px solid #525659;
     padding:10px;
     font-size:24px;  
     transition: all 0.3s ease-in-out;
@@ -119,7 +118,6 @@ ul.nav li a:hover{
     display:block;
     color:#1d868f;
     font-size:24px;
-    border:1px solid #1d868f;
 }
 
 nav.navbar{
@@ -159,8 +157,28 @@ ul.navbar-nav li:last-child{
 .dropdown-menu {
     background:#363d42;
     border:0;
-    padding:10px;
     position:relative;
+    border-radius: 0;
+    padding-bottom:0;
+}
+
+
+.dropdown-menu li{
+    border:1px solid #495156;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;    
+    border-bottom:0;
+    color:white;
+    padding:10px 0 10px 5px !important;
+}
+
+.dropdown-menu li:hover{
+    background-color:#1d868f;
+}
+
+
+.dropdown-menu a:hover{
+    color:white !important;
 }
 
 

@@ -36,10 +36,10 @@
             
             <div class="col-8 social-buttons d-flex justify-content-end">
                 <ul>
-                    <li><a href="#"><i class="social-icon fa fa-facebook" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="social-icon fa fa-twitter" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="social-icon fa fa-instagram" aria-hidden="true"></i></a></li>
-                    <li><a href="#"><i class="social-icon fa fa-youtube" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo get_theme_mod('baghira_add_fb_link'); ?>"><i class="social-icon fa fa-facebook" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo get_theme_mod('baghira_add_twitter_link'); ?>"><i class="social-icon fa fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo get_theme_mod('baghira_add_instagram_link'); ?>"><i class="social-icon fa fa-instagram" aria-hidden="true"></i></a></li>
+                    <li><a href="<?php echo get_theme_mod('baghira_add_youtube_link'); ?>"><i class="social-icon fa fa-youtube" aria-hidden="true"></i></a></li>
                 </ul>
             </div>
         </div> 
